@@ -75,12 +75,13 @@ export default function TaskList() {
           placeholder="Title"
         />
 
-        <input
-          className="w-full mb-2 p-2 border rounded"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          placeholder="Description"
-        />
+       <textarea
+           className="w-full mb-2 p-2 border rounded"
+           value={description}
+           onChange={(e) => setDescription(e.target.value)}
+           placeholder="Enter description..."
+           rows="3"
+         />
 
         <button
           onClick={addTask}

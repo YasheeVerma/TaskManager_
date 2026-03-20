@@ -136,9 +136,9 @@ export default function TaskList() {
                     {t.title}
                   </div>
 
-                  <div className="text-sm text-gray-600">
-                    {t.description}
-                  </div>
+                 <div className="whitespace-pre-line text-sm text-gray-600">
+                   {t.description}
+                 </div>
 
                   <div className="text-xs text-gray-400">
                     Created: {new Date(t.created_at).toLocaleString()}
